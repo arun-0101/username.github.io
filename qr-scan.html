@@ -4,6 +4,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+/* Video background styling */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Content styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20%;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -46,14 +79,22 @@
 </head>
 <body>
 
-<h2 style="text-align: center;">Neemroots</h2>
+<!-- Video background -->
+<video class="video-background" autoplay muted loop>
+  <source src="neemroots05.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-<div class="icon-container">
-  <!-- Add font awesome icons -->
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-youtube"></a>
-  <a href="#" class="fa fa-instagram"></a>
+<!-- Content on top of video -->
+<div class="content">
+  <h2>Neemroots</h2>
+  <div class="icon-container">
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
 </div>
 
 </body>
